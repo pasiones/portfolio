@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import AnimatedSection from './AnimatedSection';
+import AnimatedSection from './util/AnimatedSection';
 import { SKILLS_DATA } from '../constants/data';
 import { staggerContainer, scaleIn } from '../constants/animations';
 
@@ -70,16 +70,18 @@ const SkillsSection = () => {
                     const IconComponent = skill.icon;
                     const iconColors = {
                         'React.js': '#61DAFB',
-                        'Node.js / Express': '#339933',
+                        'Node.js': '#339933',
                         'Docker': '#2496ED',
                         'Kubernetes': '#326CE5',
                         'TypeScript': '#3178C6',
-                        'Python / Django': '#3776AB',
+                        'Django': '#3776AB',
                         'Flask': '#000000',
                         'FastAPI': '#009688',
                         'CI/CD (Github Actions)': '#ffffffff',
                         'Tailwind CSS': '#06B6D4',
-                        'PostgreSQL': '#4169E1',                        'MariaDB': '#003545',                        'AWS': '#FF9900',
+                        'PostgreSQL': '#4169E1',                        
+                        'MariaDB': '#003545',                        
+                        'AWS': '#FF9900',
                         'Next.js': '#000000',
                         'GraphQL / REST': '#E10098',
                         'Git': '#F05032'
@@ -90,7 +92,7 @@ const SkillsSection = () => {
                             variants={scaleIn}
                             whileHover={{ scale: 1.1, rotate: [0, -2, 2, 0] }}
                             whileTap={{ scale: 0.95 }}
-                            className="skill-card p-4 bg-gray-100 dark:bg-[#161b22] text-gray-800 dark:text-gray-300 rounded-xl shadow-lg text-center hover:shadow-accent/50 transition duration-300 flex flex-col items-center gap-2"
+                            className="skill-card p-4 bg-gray-100 dark:bg-[#161b22] text-gray-800 dark:text-gray-300 rounded-xl shadow-lg text-center hover:shadow-accent/50 transition-shadow duration-150 flex flex-col items-center gap-2"
                         >
                             <IconComponent className="text-5xl" style={{ color: iconColors[skill.name] }} />
                             <span className="text-sm">{skill.name}</span>

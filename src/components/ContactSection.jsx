@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AnimatedSection from './AnimatedSection';
+import AnimatedSection from './util/AnimatedSection';
 
 const ContactSection = () => (
     <AnimatedSection id="contact" className="max-w-2xl mx-auto text-center">

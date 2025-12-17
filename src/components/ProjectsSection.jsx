@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AnimatedSection from './AnimatedSection';
+import AnimatedSection from './util/AnimatedSection';
 import { PROJECTS_DATA } from '../constants/data';
 import { staggerContainer, fadeInUp } from '../constants/animations';
 

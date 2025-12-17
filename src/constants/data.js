@@ -1,13 +1,21 @@
 import { FaReact, FaNode, FaDocker, FaPython, FaGithub, FaAws, FaGitAlt } from 'react-icons/fa';
 import { SiTypescript, SiDjango, SiTailwindcss, SiPostgresql, SiNextdotjs, SiGraphql, SiKubernetes, SiFlask, SiFastapi, SiMariadb } from 'react-icons/si';
 
+export const ROLES_DATA = [
+    'Fullstack Software Engineer',
+    'Backend Developer',
+    'Frontend Developer',
+    'DevOps Enthusiast',
+    'Cloud Architect'
+];
+
 export const SKILLS_DATA = [
     { name: 'React.js', category: 'Frontend', icon: FaReact },
-    { name: 'Node.js / Express', category: 'Backend', icon: FaNode },
+    { name: 'Node.js', category: 'Backend', icon: FaNode },
     { name: 'Docker', category: 'Tools', icon: FaDocker },
     { name: 'Kubernetes', category: 'Tools', icon: SiKubernetes },
     { name: 'TypeScript', category: 'Frontend', icon: SiTypescript },
-    { name: 'Python / Django', category: 'Backend', icon: FaPython },
+    { name: 'Django', category: 'Backend', icon: SiDjango },
     { name: 'Flask', category: 'Backend', icon: SiFlask },
     { name: 'FastAPI', category: 'Backend', icon: SiFastapi },
     { name: 'CI/CD (Github Actions)', category: 'Tools', icon: FaGithub },

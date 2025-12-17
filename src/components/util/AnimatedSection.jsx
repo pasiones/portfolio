@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { fadeInUp } from '../constants/animations';
+import { fadeInUp } from '../../constants/animations';
 
 const AnimatedSection = ({ id, children, className = '' }) => {
     return (
