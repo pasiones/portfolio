@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+/* Base Styles: Light Mode Defaults */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white; /* Light mode body background */
+    color: #1f2937; /* Dark text for light mode */
+}
+
+/* Dark Mode Adaptation */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0d1117; /* Original dark background */
+        color: #c9d1d9; /* Original light text */
+    }
+}
+
+/* Fix anchor links being hidden by the sticky header */
+section {
+    scroll-margin-top: 5rem;
+}
+
+/* Accent Color Definitions */
+.text-accent {
+    color: #238636;
+}
+
+.bg-accent {
+    background-color: #238636;
+}
+
+.hover\:text-accent:hover {
+    color: #238636 !important;
+}
+
+.hover\:bg-accent:hover {
+    background-color: #238636;
+}
+
+.hover\:bg-accent-hover:hover {
+    background-color: #2ea043;
+}
+
+/* Custom scrollbar for aesthetics */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #238636;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f3f4f6; /* Light scrollbar track in light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+    body::-webkit-scrollbar-track {
+        background-color: #0d1117; /* Dark scrollbar track in dark mode */
+    }
+}
