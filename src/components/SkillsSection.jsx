@@ -69,22 +69,29 @@ const SkillsSection = () => {
                 {filteredSkills.map((skill, index) => {
                     const IconComponent = skill.icon;
                     const iconColors = {
+                        'Java': '#ffffffff',
+                        'HTML5': '#E34F26',
+                        'CSS3': '#1572B6',
                         'React.js': '#61DAFB',
                         'Node.js': '#339933',
                         'Docker': '#2496ED',
                         'Kubernetes': '#326CE5',
                         'TypeScript': '#3178C6',
-                        'Django': '#3776AB',
+                        //'Django': '#3776AB',
                         'Flask': '#000000',
                         'FastAPI': '#009688',
                         'CI/CD (Github Actions)': '#ffffffff',
                         'Tailwind CSS': '#06B6D4',
-                        'PostgreSQL': '#4169E1',                        
+                        'PostgreSQL': '#4169E1',
+                        'MySQL': '#4479A1',
                         'MariaDB': '#003545',                        
-                        'AWS': '#FF9900',
-                        'Next.js': '#000000',
-                        'GraphQL / REST': '#E10098',
-                        'Git': '#F05032'
+                        //'AWS': '#FF9900',
+                        //'Next.js': '#000000',
+                        //'GraphQL / REST': '#E10098',
+                        'Git': '#F05032',
+                        'Ansible': '#EE0000',
+                        'Terraform': '#7B42BC',
+                        'GitLab': '#FC6D26'
                     };
                     return (
                         <motion.div
