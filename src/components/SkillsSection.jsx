@@ -91,7 +91,8 @@ const SkillsSection = () => {
                         'Git': '#F05032',
                         'Ansible': '#EE0000',
                         'Terraform': '#7B42BC',
-                        'GitLab': '#FC6D26'
+                        'GitLab': '#FC6D26',
+                        'Azure Databricks': '#FF3621'
                     };
                     return (
                         <motion.div

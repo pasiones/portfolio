@@ -3,7 +3,7 @@ import { FaReact, FaNode, FaDocker, FaPython, FaGithub, FaAws,
 
 import { SiTypescript, SiDjango, SiTailwindcss, SiPostgresql, 
     SiNextdotjs, SiGraphql, SiKubernetes, SiFlask, SiFastapi, 
-    SiMariadb, SiAnsible, SiTerraform, SiMysql } from 'react-icons/si';
+    SiMariadb, SiAnsible, SiTerraform, SiMysql, SiDatabricks } from 'react-icons/si';
 
 import GcpIcon from '../assets/icons/gcp-icon.svg?react';
 
@@ -39,6 +39,7 @@ export const SKILLS_DATA = [
     { name: 'Ansible', category: 'Tools', icon: SiAnsible },
     { name: 'Terraform', category: 'Tools', icon: SiTerraform },
     { name: 'GitLab', category: 'Tools', icon: FaGitlab },
+    { name: 'Azure Databricks', category: 'Tools', icon: SiDatabricks },
     { name: 'GCP', category: 'Tools', icon: GcpIcon }
 ];
 
@@ -69,7 +70,7 @@ export const PROJECTS_DATA = [
         period: 'Full-Stack Development | 2025',
         description: 'A weather-based activity recommendation web app. Given a city name, the application displays weather information and suggests location categories (cafe, restaurant, cinema, park, etc.) tailored to current weather conditions. An interactive map updates based on user category selections.',
         tags: ['FastAPI', 'React', 'TypeScript', 'CSC'],
-        link: '#'
+        link: 'http://79.76.39.35/'
     },
     {
         title: 'Real-Time Weather Desktop Application',
