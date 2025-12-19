@@ -117,12 +117,28 @@ const SkillsSection = () => {
                         <motion.div
                             key={index}
                             variants={scaleIn}
-                            whileHover={{ scale: 1.1, rotate: [0, -2, 2, 0] }}
+                            whileHover={{ scale: 1.05, rotate: [0, -2, 2, 0] }}
                             whileTap={{ scale: 0.95 }}
-                            className="skill-card p-4 bg-gray-100 dark:bg-[#161b22] text-gray-800 dark:text-gray-300 rounded-xl shadow-lg text-center hover:shadow-accent/50 transition-shadow duration-150 flex flex-col items-center gap-2"
+                            className="skill-card p-4 bg-gray-100 dark:bg-[#161b22] text-gray-800 dark:text-gray-300 rounded-xl shadow-lg hover:shadow-accent/50 transition-shadow duration-150 flex flex-col items-center gap-3"
                         >
                             <IconComponent className="text-5xl" style={{ color: iconColors[skill.name] }} />
-                            <span className="text-sm">{skill.name}</span>
+                            <span className="text-sm font-medium">{skill.name}</span>
+                            
+                            {/* Progress Bar */}
+                            <div className="w-full">
+                                <div className="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
+                                    <motion.div
+                                        initial={{ width: 0 }}
+                                        whileInView={{ width: `${skill.proficiency}%` }}
+                                        viewport={{ once: false }}
+                                        transition={{ duration: 1, delay: index * 0.05 }}
+                                        className="h-full bg-accent rounded-full"
+                                    />
+                                </div>
+                                <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 block">
+                                    {skill.proficiency}%
+                                </span>
+                            </div>
                         </motion.div>
                     );
                 })}
