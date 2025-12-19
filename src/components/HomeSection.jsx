@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeInDown } from '../constants/animations';
 import { ROLES_DATA } from '../constants/data';
+import profileImage from '../assets/profile.jpg';
 
 const HomeSection = () => {
     const [currentRole, setCurrentRole] = useState(0);
@@ -144,7 +145,7 @@ const HomeSection = () => {
                         }}
                     >
                         <img 
-                            src="/profile.jpg" 
+                            src={profileImage} 
                             alt="Dat Minh Lam"
                             className="w-full h-full object-cover"
                         />
