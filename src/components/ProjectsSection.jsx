@@ -49,7 +49,7 @@ const ProjectsSection = () => (
                         whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(35, 134, 54, 0.2)" }}
                         className={`project-card bg-white dark:bg-[#0d1117] p-6 rounded-xl border border-gray-300 dark:border-gray-700 hover:border-accent transition duration-300 shadow-xl ${project.link && project.link !== '#' ? 'cursor-pointer' : ''}`}
                     >
-                        <div className="flex items-center justify-between mb-2">
+                        <div className="flex items-start justify-between mb-2 gap-2">
                             <h3 className="text-2xl font-semibold text-accent flex items-center gap-2">
                                 {project.title}
                                 {project.link && project.link !== '#' && (
@@ -57,7 +57,7 @@ const ProjectsSection = () => (
                                 )}
                             </h3>
                             {project.isPrivate && (
-                                <span className="text-xs bg-gray-400 dark:bg-gray-600 text-white px-2 py-1 rounded-full">
+                                <span className="text-xs bg-gray-400 dark:bg-gray-600 text-white px-3 py-1 rounded-full whitespace-nowrap flex-shrink-0">
                                     Private
                                 </span>
                             )}
