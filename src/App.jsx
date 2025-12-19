@@ -9,10 +9,12 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ScrollToTop from './components/util/ScrollToTop';
 import CustomCursor from './components/util/CustomCursor';
+import ScrollProgress from './components/util/ScrollProgress';
 
 const App = () => {
     return (
         <>
+            <ScrollProgress />
             <CustomCursor />
             <NavigationBar />
 
