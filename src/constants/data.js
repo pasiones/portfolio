@@ -87,6 +87,26 @@ export const PROJECTS_DATA = [
             'automate deployment processes.',
         tags: ['Java', 'JavaFX', 'Git', 'CI/CD'],
         link: 'https://github.com/pasiones/Java-Weather-App'
+    },
+    {
+        title: 'AI-Powered Jira Plugin for Bug Reports',
+        period: 'Software Engineering Project | Autumn 2025',
+        description: 
+            'Developed a Jira plugin that provides AI-powered assistance for bug report creation and analysis. ' +
+            'Led frontend development using React, implemented prompt engineering for LLM integration to optimize ' +
+            'AI responses, and created an intuitive interface for automated bug report analysis and recommendations.',
+        tags: ['React', 'JavaScript', 'Jira API', 'OpenAI API', 'Forge App'],
+        isPrivate: true
+    },
+        {
+        title: 'Predictive Extension for Electric Metric Data',
+        period: 'Software Engineering Project | Spring 2025',
+        description: 
+            'A time-series prediction system for electric metric data using PyTorch for ML modeling, Flask backend, ' +
+            'React frontend, and MySQL database. Deployed on CSC infrastructure with Docker containerization. ' +
+            'Managed project workflow using Trello Kanban board for efficient team collaboration and task scheduling.',
+        tags: ['PyTorch', 'Flask', 'React', 'MySQL', 'Docker', 'CSC', 'WSL'],
+        isPrivate: true
     }
 ];
 
