@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './util/AnimatedSection';
 import { SKILLS_DATA } from '../constants/data';
@@ -6,6 +6,25 @@ import { staggerContainer, scaleIn } from '../constants/animations';
 
 const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState('All');
+    const [isDark, setIsDark] = useState(false);
+
+    useEffect(() => {
+        // Check if dark mode is active
+        const checkDarkMode = () => {
+            setIsDark(document.documentElement.classList.contains('dark'));
+        };
+        
+        checkDarkMode();
+        
+        // Watch for changes in dark mode
+        const observer = new MutationObserver(checkDarkMode);
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
+        
+        return () => observer.disconnect();
+    }, []);
 
     const filteredSkills = activeCategory === 'All'
         ? SKILLS_DATA
@@ -69,7 +88,7 @@ const SkillsSection = () => {
                 {filteredSkills.map((skill, index) => {
                     const IconComponent = skill.icon;
                     const iconColors = {
-                        'Java': '#ffffffff',
+                        'Java': isDark ? '#5382a1' : '#007396',
                         'HTML5': '#E34F26',
                         'CSS3': '#1572B6',
                         'React.js': '#61DAFB',
@@ -78,9 +97,9 @@ const SkillsSection = () => {
                         'Kubernetes': '#326CE5',
                         'TypeScript': '#3178C6',
                         //'Django': '#3776AB',
-                        'Flask': '#000000',
+                        'Flask': isDark ? '#FFFFFF' : '#000000',
                         'FastAPI': '#009688',
-                        'CI/CD (Github Actions)': '#ffffffff',
+                        'CI/CD (Github Actions)': '#2088FF',
                         'Tailwind CSS': '#06B6D4',
                         'PostgreSQL': '#4169E1',
                         'MySQL': '#4479A1',
