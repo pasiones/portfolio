@@ -34,9 +34,9 @@ const ExperienceSection = () => (
                         <div className="w-full md:w-[47%]">
                             <motion.div 
                                 whileHover={{ scale: 1.05 }}
-                                className={`bg-white dark:bg-[#161b22] p-6 rounded-xl shadow-lg transition duration-300 hover:shadow-accent/20 ${
-                                    isRight ? 'border-l-4 border-accent' : 'border-r-4 border-accent'
-                                }`}
+                                className={`bg-white dark:bg-[#161b22] p-6 rounded-xl shadow-lg transition duration-300 hover:shadow-accent/20 border-l-4 md:${
+                                    isRight ? 'border-l-4' : 'border-r-4 border-l-0'
+                                } border-accent`}
                             >
                                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">{job.title}</h3>
                                 <p className="text-accent mb-1">{job.company}</p>
@@ -55,7 +55,7 @@ const ExperienceSection = () => (
                             transition={{ duration: 0.4, delay: index * 0.2 + 0.3 }}
                             className="hidden md:block w-3 h-3 bg-accent rounded-full absolute left-1/2 transform -translate-x-1/2 z-10 ring-4 ring-white dark:ring-[#0d1117]"
                         ></motion.div>
-                        <div className="w-full md:w-[47%]"></div>
+                        <div className="hidden md:block w-[47%]"></div>
                     </motion.div>
                 );
             })}
