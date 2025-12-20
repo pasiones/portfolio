@@ -8,11 +8,9 @@ import { SiTypescript, SiDjango, SiTailwindcss, SiPostgresql,
 import GcpIcon from '../assets/icons/gcp-icon.svg?react';
 
 export const ROLES_DATA = [
-    'AI Engineer',
-    'Backend Developer',
-    'Frontend Developer',
-    'DevOps Enthusiast',
-    'Cloud Architect'
+    'Full-Stack Developer',
+    'AI/ML Engineer',
+    'Cloud & DevOps Enthusiast',
 ];
 
 export const SKILLS_DATA = [
