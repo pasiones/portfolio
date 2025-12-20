@@ -105,6 +105,17 @@ export const PROJECTS_DATA = [
             'Managed project workflow using Trello Kanban board for efficient team collaboration and task scheduling.',
         tags: ['PyTorch', 'Flask', 'React', 'MySQL', 'Docker', 'CSC', 'WSL'],
         isPrivate: true
+    },
+        {
+        title: 'Kubernetes-Based E-commerce Platform Deployment',
+        period: 'Cloud & DevOps Project | Spring 2025',
+        description:
+            'Designed and deployed a fully functional Kubernetes cluster on CSC cPouta cloud using Rancher for cluster management. ' +
+            'Implemented container orchestration with Kubernetes, configured Nginx ingress controller and load balancing to expose services externally, ' +
+            'and set up an NFS server for persistent storage. Deployed the EverStore e-commerce platform with its database stored on NFS, ' +
+            'ensuring scalability, fault tolerance, and automated service recovery.',
+        tags: ['Kubernetes', 'Rancher', 'Docker', 'Nginx', 'NFS', 'CSC cPouta'],
+        isPrivate: true
     }
 ];
 
