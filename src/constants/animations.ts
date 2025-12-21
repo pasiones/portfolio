@@ -5,19 +5,22 @@ export const fadeInUp: Variants = {
     visible: { 
         opacity: 1, 
         y: 0,
-        transition: { duration: 0.6, ease: "easeOut" }
+        transition: { 
+            duration: 0.6, 
+            ease: "easeOut" 
+        }
     }
 };
 
-export const fadeInDown = {
+export const fadeInDown: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: (i: number = 0) => ({
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.8,
-            delay: i * 0.1,
-            ease: "easeOut" as const
+            duration: 0.8, 
+            delay: i * 0.1, 
+            ease: "easeOut"
         }
     })
 };
@@ -38,6 +41,9 @@ export const scaleIn: Variants = {
     visible: { 
         opacity: 1, 
         scale: 1,
-        transition: { duration: 0.5, ease: "easeOut" }
+        transition: { 
+            duration: 0.5, 
+            ease: "easeOut" 
+        }
     }
 };
