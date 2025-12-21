@@ -4,7 +4,7 @@ import AnimatedSection from './util/AnimatedSection';
 import { SKILLS_DATA } from '../constants/data';
 import { staggerContainer, scaleIn } from '../constants/animations';
 
-const SkillsSection = () => {
+const SkillsSection: React.FC = () => {
     const [activeCategory, setActiveCategory] = useState('All');
     const [isDark, setIsDark] = useState(false);
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './util/AnimatedSection';
 
-const ContactSection = () => (
+const ContactSection: React.FC = () => (
     <AnimatedSection id="contact" className="max-w-2xl mx-auto text-center">
         <motion.p 
             initial={{ opacity: 0, y: 20 }}

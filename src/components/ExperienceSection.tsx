@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import AnimatedSection from './util/AnimatedSection';
 import { EXPERIENCE_DATA } from '../constants/data';
 
-const ExperienceSection = () => (
+const ExperienceSection: React.FC = () => (
     <AnimatedSection id="experience" className="!pt-12 sm:!pt-16">
         <motion.h2 
             initial={{ opacity: 0, y: 20 }}

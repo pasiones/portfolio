@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const CustomCursor = () => {
+const CustomCursor: React.FC = () => {
     const coordsRef = useRef({ x: 0, y: 0 });
     const circlesRef = useRef([]);
     
@@ -25,7 +25,7 @@ const CustomCursor = () => {
             }
         });
 
-        const handleMouseMove = (e) => {
+        const handleMouseMove = (e: MouseEvent) => {
             coordsRef.current.x = e.clientX;
             coordsRef.current.y = e.clientY;
         };

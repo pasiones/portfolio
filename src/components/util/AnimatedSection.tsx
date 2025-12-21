@@ -2,7 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeInUp } from '../../constants/animations';
 
-const AnimatedSection = ({ id, children, className = '', padding = 'py-12 sm:py-16' }) => {
+interface AnimatedSectionProps {
+    id: string;
+    children: React.ReactNode;
+    className?: string;
+    padding?: string;
+}
+
+const AnimatedSection: React.FC<AnimatedSectionProps> = ({ id, children, className = '', padding = 'py-12 sm:py-16' }) => {
     return (
         <motion.section
             id={id}

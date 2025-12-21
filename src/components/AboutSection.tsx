@@ -4,7 +4,7 @@ import AnimatedSection from './util/AnimatedSection';
 import { fadeInUp } from '../constants/animations';
 import { ABOUT_DATA } from '../constants/data';
 
-const AboutSection = () => {
+const AboutSection: React.FC = () => {
     return (
         <AnimatedSection id="about" padding='py-20 sm:py-22'>
             <motion.h2 

@@ -4,7 +4,7 @@ import { fadeInDown } from '../constants/animations';
 import { ROLES_DATA } from '../constants/data';
 import profileImage from '../assets/profile.jpg';
 
-const HomeSection = () => {
+const HomeSection: React.FC = () => {
     const [currentRole, setCurrentRole] = useState(0);
 
     useEffect(() => {

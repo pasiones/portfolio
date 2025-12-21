@@ -11,7 +11,7 @@ import ScrollToTop from './components/util/ScrollToTop';
 import CustomCursor from './components/util/CustomCursor';
 import ScrollProgress from './components/util/ScrollProgress';
 
-const App = () => {
+const App: React.FC = () => {
     return (
         <>
             <ScrollProgress />

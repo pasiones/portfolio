@@ -5,7 +5,7 @@ import AnimatedSection from './util/AnimatedSection';
 import { PROJECTS_DATA } from '../constants/data';
 import { staggerContainer, fadeInUp } from '../constants/animations';
 
-const ProjectsSection = () => (
+const ProjectsSection: React.FC = () => (
     <AnimatedSection id="projects" className="bg-gray-100 dark:bg-[#161b22] rounded-xl shadow-2xl">
         <motion.h2 
             initial={{ opacity: 0, y: 20 }}

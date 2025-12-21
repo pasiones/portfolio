@@ -1,3 +1,4 @@
+import { IconType } from 'react-icons';
 import { FaReact, FaNode, FaDocker, FaPython, FaGithub, FaAws, 
     FaGitAlt, FaJava, FaGitlab, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 
@@ -7,13 +8,24 @@ import { SiTypescript, SiDjango, SiTailwindcss, SiPostgresql,
 
 import GcpIcon from '../assets/icons/gcp-icon.svg?react';
 
-export const ROLES_DATA = [
+export const ROLES_DATA: string[] = [
     'Full-Stack Developer',
     'AI/ML Engineer',
     'Cloud & DevOps Enthusiast',
 ];
 
-export const ABOUT_DATA = [
+export interface Highlight {
+    text: string;
+    bold?: boolean;
+    color?: boolean;
+}
+
+export interface AboutParagraph {
+    text: string;
+    highlights: Highlight[];
+}
+
+export const ABOUT_DATA: AboutParagraph[] = [
     {
         text: "I'm a ",
         highlights: [
@@ -68,7 +80,14 @@ export const ABOUT_DATA = [
     }
 ];
 
-export const SKILLS_DATA = [
+export interface Skill {
+    name: string;
+    category: 'Frontend' | 'Backend' | 'Tools';
+    icon: IconType | React.FC<React.SVGProps<SVGSVGElement>>;
+    proficiency: number;
+}
+
+export const SKILLS_DATA: Skill[] = [
     { name: 'Java', category: 'Backend', icon: FaJava, proficiency: 80 },
     { name: 'HTML5', category: 'Frontend', icon: FaHtml5, proficiency: 90 },
     { name: 'CSS3', category: 'Frontend', icon: FaCss3Alt, proficiency: 90 },
@@ -96,7 +115,16 @@ export const SKILLS_DATA = [
     { name: 'GCP', category: 'Tools', icon: GcpIcon, proficiency: 75 }
 ];
 
-export const PROJECTS_DATA = [
+export interface Project {
+    title: string;
+    period: string;
+    description: string;
+    tags: string[];
+    link?: string;
+    isPrivate?: boolean;
+}
+
+export const PROJECTS_DATA: Project[] = [
     {
         title: 'Zero-Fail Logistics Solution',
         period: 'Hackathon Project | November 2025',
@@ -174,7 +202,15 @@ export const PROJECTS_DATA = [
     }
 ];
 
-export const EXPERIENCE_DATA = [
+export interface Experience {
+    title: string;
+    company: string;
+    period: string;
+    bullets: string[];
+    alignment: 'left' | 'right';
+}
+
+export const EXPERIENCE_DATA: Experience[] = [
     {
         title: 'Master of Science in Web, Software and Cloud',
         company: 'Tampere University',
@@ -261,4 +297,3 @@ export const EXPERIENCE_DATA = [
         alignment: 'right',
     }
 ];
-

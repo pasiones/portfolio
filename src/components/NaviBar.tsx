@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaHome, FaUser, FaCode, FaProjectDiagram, FaBriefcase, FaEnvelope } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
-const NavigationBar = () => {
+interface NavItem {
+    id: string;
+    label: string;
+    icon: IconType;
+}
+
+const NavigationBar: React.FC = () => {
     const [activeSection, setActiveSection] = useState('home');
 
     useEffect(() => {
@@ -28,7 +35,7 @@ const NavigationBar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const handleNavClick = (e, targetId) => {
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
         e.preventDefault();
         const element = document.getElementById(targetId);
         if (element) {
