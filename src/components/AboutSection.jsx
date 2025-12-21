@@ -6,7 +6,7 @@ import { ABOUT_DATA } from '../constants/data';
 
 const AboutSection = () => {
     return (
-        <AnimatedSection id="about">
+        <AnimatedSection id="about" padding='py-20 sm:py-22'>
             <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

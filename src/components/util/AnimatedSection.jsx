@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeInUp } from '../../constants/animations';
 
-const AnimatedSection = ({ id, children, className = '' }) => {
+const AnimatedSection = ({ id, children, className = '', padding = 'py-12 sm:py-16' }) => {
     return (
         <motion.section
             id={id}
@@ -10,7 +10,7 @@ const AnimatedSection = ({ id, children, className = '' }) => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2, margin: "0px 0px -100px 0px" }}
             variants={fadeInUp}
-            className={`py-20 sm:py-28 ${className}`}
+            className={`${padding} ${className}`}
         >
             {children}
         </motion.section>
