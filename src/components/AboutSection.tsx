@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './util/AnimatedSection';
-import { fadeInUp } from '../constants/animations';
 import { ABOUT_DATA } from '../constants/data';
 
 const AboutSection: React.FC = () => {

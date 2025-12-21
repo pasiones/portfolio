@@ -17,7 +17,7 @@ export const fadeInDown = {
         transition: {
             duration: 0.8,
             delay: i * 0.1,
-            ease: "easeOut"
+            ease: "easeOut" as const
         }
     })
 };
