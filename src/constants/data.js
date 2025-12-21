@@ -14,24 +14,58 @@ export const ROLES_DATA = [
 ];
 
 export const ABOUT_DATA = [
-    'I\'m a Fullstack Software Engineer specializing in building scalable web applications—from ' + 
-    'modern frontend frameworks to robust, containerized backend services. With a passion for clean ' + 
-    'code and efficient architecture, I transform complex challenges into elegant solutions that deliver ' + 
-    'real value to users and businesses.',
-
-    'My expertise spans across the entire development lifecycle, from designing intuitive user interfaces ' + 
-    'to architecting distributed backend systems. I thrive on working with cutting-edge technologies and ' + 
-    'best practices, ensuring that every project I touch is built for scalability, maintainability, and performance.',
-
-    'Currently, I\'m exploring the meaningful applications of AI in software development, focusing on how these ' +
-    'technologies can enhance user experiences and solve real-world problems. I believe in continuous learning and ' +
-    'staying at the forefront of technological innovation to create impactful solutions.',
-
-    'Beyond development, I\'m deeply invested in modern cloud infrastructure and DevOps practices. I actively work ' +
-    'with containerization tools like Docker and Kubernetes, infrastructure as code through Terraform and Ansible, ' +
-    'and cloud platforms including Google Cloud Platform and CSC infrastructure. Currently pursuing AWS Solution Architect ' +
-    'certification to deepen my expertise in cloud architecture patterns and best practices. I\'m passionate about building ' +
-    'automated CI/CD pipelines and creating resilient, scalable architectures that bridge the gap between development and operations.'
+    {
+        text: "I'm a ",
+        highlights: [
+            { text: "Fullstack Software Engineer", bold: true, color: true },
+            { text: " specializing in building " },
+            { text: "scalable web applications", bold: true },
+            { text: "—from modern frontend frameworks to robust, containerized backend services. With a passion for clean code and efficient architecture, I transform complex challenges into elegant solutions that deliver real value to users and businesses." }
+        ]
+    },
+    {
+        text: "My expertise spans across the ",
+        highlights: [
+            { text: "entire development lifecycle", bold: true },
+            { text: ", from designing intuitive user interfaces to architecting distributed backend systems. I thrive on working with " },
+            { text: "cutting-edge technologies", bold: true },
+            { text: " and best practices, ensuring that every project I touch is built for " },
+            { text: "scalability, maintainability, and performance", bold: true, color: true },
+            { text: "." }
+        ]
+    },
+    {
+        text: "Currently, I'm exploring the meaningful applications of ",
+        highlights: [
+            { text: "AI", bold: true, color: true },
+            { text: " in software development, focusing on how these technologies can enhance user experiences and solve real-world problems. I believe in " },
+            { text: "continuous learning", bold: true },
+            { text: " and staying at the forefront of technological innovation to create impactful solutions." }
+        ]
+    },
+    {
+        text: "Beyond development, I'm deeply invested in modern ",
+        highlights: [
+            { text: "cloud infrastructure", bold: true, color: true },
+            { text: " and " },
+            { text: "DevOps practices", bold: true, color: true },
+            { text: ". I actively work with containerization tools like " },
+            { text: "Docker", bold: true },
+            { text: " and " },
+            { text: "Kubernetes", bold: true },
+            { text: ", infrastructure as code through " },
+            { text: "Terraform", bold: true },
+            { text: " and " },
+            { text: "Ansible", bold: true },
+            { text: ", and cloud platforms including " },
+            { text: "Google Cloud Platform", bold: true },
+            { text: " and CSC infrastructure. Currently pursuing " },
+            { text: "AWS Solution Architect", bold: true, color: true },
+            { text: " certification to deepen my expertise in cloud architecture patterns and best practices. I'm passionate about building automated " },
+            { text: "CI/CD pipelines", bold: true },
+            { text: " and creating resilient, scalable architectures that bridge the gap between development and operations." }
+        ]
+    }
 ];
 
 export const SKILLS_DATA = [

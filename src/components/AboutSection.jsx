@@ -32,7 +32,21 @@ const AboutSection = () => {
                                 index < ABOUT_DATA.length - 1 ? 'mb-6' : ''
                             }`}
                         >
-                            {paragraph}
+                            {paragraph.text}
+                            {paragraph.highlights.map((highlight, hIndex) => (
+                                <span
+                                    key={hIndex}
+                                    className={`${
+                                        highlight.bold ? 'font-semibold' : ''
+                                    } ${
+                                        highlight.color 
+                                            ? 'text-gray-800 dark:text-gray-200 bg-gradient-to-r from-blue-500/10 to-purple-500/10 dark:from-blue-400/20 dark:to-purple-400/20 px-1 rounded' 
+                                            : ''
+                                    }`}
+                                >
+                                    {highlight.text}
+                                </span>
+                            ))}
                         </p>
                     ))}
                 </motion.div>
