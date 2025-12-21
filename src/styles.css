@@ -3,7 +3,6 @@
 /* Smooth scrolling behavior */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
 }
 
 /* Base Styles: Light Mode Defaults */
@@ -21,10 +20,6 @@ body {
     }
 }
 
-/* Fix anchor links being hidden by the sticky header */
-section {
-    scroll-margin-top: 5rem;
-}
 
 /* Accent Color Definitions */
 .text-accent {
