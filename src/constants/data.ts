@@ -112,7 +112,7 @@ export const SKILLS_DATA: Skill[] = [
     { name: 'Terraform', category: 'Tools', icon: SiTerraform, proficiency: 80 },
     { name: 'GitLab', category: 'Tools', icon: FaGitlab, proficiency: 95 },
     { name: 'Azure Databricks', category: 'Tools', icon: SiDatabricks, proficiency: 85 },
-    { name: 'GCP', category: 'Tools', icon: GcpIcon, proficiency: 75 }
+    { name: 'GCP', category: 'Tools', icon: GcpIcon, proficiency: 65 }
 ];
 
 export interface Project {
@@ -122,6 +122,7 @@ export interface Project {
     tags: string[];
     link?: string;
     isPrivate?: boolean;
+    image?: string;
 }
 
 export const PROJECTS_DATA: Project[] = [
@@ -137,7 +138,8 @@ export const PROJECTS_DATA: Project[] = [
             'Python', 'XGBoost', 'LangChain', 'FastAPI', 
             'React', 'TypeScript', 'MariaDB', 'Google Cloud'
         ],
-        link: 'https://github.com/vincentbui21/Hackathon2025'
+        link: 'https://github.com/vincentbui21/Hackathon2025',
+        image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop'
     },
     {
         title: 'NPM Dependency Visualization Tool',
@@ -147,7 +149,8 @@ export const PROJECTS_DATA: Project[] = [
             'package dependencies. Provides clear, intuitive insights for developers to improve dependency ' +
             'management and understand complex package relationships through interactive visualizations.',
         tags: ['React', 'NPM', 'D3.js', 'JavaScript'],
-        link: 'https://npm-dependency-explorer.vercel.app/'
+        link: 'https://npm-dependency-explorer.vercel.app/',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop'
     },
     {
         title: 'Smart Travel Companion',
@@ -157,7 +160,8 @@ export const PROJECTS_DATA: Project[] = [
             'information and suggests location categories (cafe, restaurant, cinema, park, etc.) tailored to current ' +
             'weather conditions. An interactive map updates based on user category selections.',
         tags: ['FastAPI', 'React', 'TypeScript', 'Oracle Cloud'],
-        link: 'http://79.76.39.35/'
+        link: 'http://79.76.39.35/',
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop'
     },
     {
         title: 'Real-Time Weather Desktop Application',
@@ -167,7 +171,8 @@ export const PROJECTS_DATA: Project[] = [
             'user interface. Implemented Git version control and CI pipeline to streamline development workflow and ' +
             'automate deployment processes.',
         tags: ['Java', 'JavaFX', 'Git', 'CI/CD'],
-        link: 'https://github.com/pasiones/Java-Weather-App'
+        link: 'https://github.com/pasiones/Java-Weather-App',
+        image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop'
     },
     {
         title: 'AI-Powered Jira Plugin for Bug Reports',
@@ -177,7 +182,8 @@ export const PROJECTS_DATA: Project[] = [
             'Led frontend development using React, implemented prompt engineering for LLM integration to optimize ' +
             'AI responses, and created an intuitive interface for automated bug report analysis and recommendations.',
         tags: ['React', 'JavaScript', 'Jira API', 'OpenAI API', 'Forge App'],
-        isPrivate: true
+        isPrivate: true,
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop'
     },
         {
         title: 'Predictive Extension for Electric Metric Data',
@@ -187,7 +193,8 @@ export const PROJECTS_DATA: Project[] = [
             'React frontend, and MySQL database. Deployed on CSC infrastructure with Docker containerization. ' +
             'Managed project workflow using Trello Kanban board for efficient team collaboration and task scheduling.',
         tags: ['PyTorch', 'Flask', 'React', 'MySQL', 'Docker', 'CSC', 'WSL'],
-        isPrivate: true
+        isPrivate: true,
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop'
     },
         {
         title: 'Kubernetes-Based E-commerce Platform Deployment',
@@ -198,7 +205,8 @@ export const PROJECTS_DATA: Project[] = [
             'and set up an NFS server for persistent storage. Deployed the EverStore e-commerce platform with its database stored on NFS, ' +
             'ensuring scalability, fault tolerance, and automated service recovery.',
         tags: ['Kubernetes', 'Rancher', 'Docker', 'Nginx', 'NFS', 'CSC cPouta'],
-        isPrivate: true
+        isPrivate: true,
+        image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop'
     }
 ];
 

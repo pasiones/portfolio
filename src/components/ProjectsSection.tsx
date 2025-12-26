@@ -47,33 +47,49 @@ const ProjectsSection: React.FC = () => (
                         {...linkProps}
                         variants={fadeInUp}
                         whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(35, 134, 54, 0.2)" }}
-                        className={`project-card bg-white dark:bg-[#0d1117] p-6 rounded-xl border border-gray-300 dark:border-gray-700 hover:border-accent transition duration-300 shadow-xl ${project.link && project.link !== '#' ? 'cursor-pointer' : ''}`}
+                        className={`project-card bg-white dark:bg-[#0d1117] rounded-xl border border-gray-300 dark:border-gray-700 hover:border-accent transition duration-300 shadow-xl overflow-hidden ${project.link && project.link !== '#' ? 'cursor-pointer' : ''}`}
                     >
-                        <div className="flex items-start justify-between mb-2 gap-2">
-                            <h3 className="text-2xl font-semibold text-accent flex items-center gap-2">
-                                {project.title}
-                                {project.link && project.link !== '#' && (
-                                    <FaExternalLinkAlt className="text-lg opacity-60" />
-                                )}
-                            </h3>
-                            {project.isPrivate && (
-                                <span className="text-xs bg-gray-400 dark:bg-gray-600 text-white px-3 py-1 rounded-full whitespace-nowrap flex-shrink-0">
-                                    Private
-                                </span>
-                            )}
-                        </div>
-                        <p className="text-sm text-gray-500 dark:text-gray-500 mb-4">{project.period}</p>
-                        <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
-                        <div className="flex flex-wrap gap-2 text-xs">
-                            {project.tags.map((tag, tagIndex) => (
-                                <motion.span 
-                                    key={tagIndex}
+                        {/* Project Image */}
+                        {project.image && (
+                            <div className="relative h-48 overflow-hidden">
+                                <motion.img 
+                                    src={project.image} 
+                                    alt={project.title}
+                                    className="w-full h-full object-cover"
                                     whileHover={{ scale: 1.1 }}
-                                    className="bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full"
-                                >
-                                    {tag}
-                                </motion.span>
-                            ))}
+                                    transition={{ duration: 0.3 }}
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            </div>
+                        )}
+                        
+                        <div className="p-6">
+                            <div className="flex items-start justify-between mb-2 gap-2">
+                                <h3 className="text-2xl font-semibold text-accent flex items-center gap-2">
+                                    {project.title}
+                                    {project.link && project.link !== '#' && (
+                                        <FaExternalLinkAlt className="text-lg opacity-60" />
+                                    )}
+                                </h3>
+                                {project.isPrivate && (
+                                    <span className="text-xs bg-gray-400 dark:bg-gray-600 text-white px-3 py-1 rounded-full whitespace-nowrap flex-shrink-0">
+                                        Private
+                                    </span>
+                                )}
+                            </div>
+                            <p className="text-sm text-gray-500 dark:text-gray-500 mb-4">{project.period}</p>
+                            <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
+                            <div className="flex flex-wrap gap-2 text-xs">
+                                {project.tags.map((tag, tagIndex) => (
+                                    <motion.span 
+                                        key={tagIndex}
+                                        whileHover={{ scale: 1.1 }}
+                                        className="bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full"
+                                    >
+                                        {tag}
+                                    </motion.span>
+                                ))}
+                            </div>
                         </div>
                     </CardWrapper>
                 );

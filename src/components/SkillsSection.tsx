@@ -4,6 +4,29 @@ import AnimatedSection from './util/AnimatedSection';
 import { SKILLS_DATA } from '../constants/data';
 import { staggerContainer, scaleIn } from '../constants/animations';
 
+const getIconColors = (isDark: boolean): { [key: string]: string } => ({
+    'Java': isDark ? '#5382a1' : '#007396',
+    'HTML5': '#E34F26',
+    'CSS3': '#1572B6',
+    'React.js': '#61DAFB',
+    'Node.js': '#339933',
+    'Docker': '#2496ED',
+    'Kubernetes': '#326CE5',
+    'TypeScript': '#3178C6',
+    'Flask': isDark ? '#FFFFFF' : '#000000',
+    'FastAPI': '#009688',
+    'CI/CD (Github Actions)': '#2088FF',
+    'Tailwind CSS': '#06B6D4',
+    'PostgreSQL': '#4169E1',
+    'MySQL': '#4479A1',
+    'MariaDB': '#003545',
+    'Git': '#F05032',
+    'Ansible': '#EE0000',
+    'Terraform': '#7B42BC',
+    'GitLab': '#FC6D26',
+    'Azure Databricks': '#FF3621',
+});
+
 const SkillsSection: React.FC = () => {
     const [activeCategory, setActiveCategory] = useState('All');
     const [isDark, setIsDark] = useState(false);
@@ -87,32 +110,9 @@ const SkillsSection: React.FC = () => {
             >
                 {filteredSkills.map((skill, index) => {
                     const IconComponent = skill.icon;
-                    const iconColors = {
-                        'Java': isDark ? '#5382a1' : '#007396',
-                        'HTML5': '#E34F26',
-                        'CSS3': '#1572B6',
-                        'React.js': '#61DAFB',
-                        'Node.js': '#339933',
-                        'Docker': '#2496ED',
-                        'Kubernetes': '#326CE5',
-                        'TypeScript': '#3178C6',
-                        //'Django': '#3776AB',
-                        'Flask': isDark ? '#FFFFFF' : '#000000',
-                        'FastAPI': '#009688',
-                        'CI/CD (Github Actions)': '#2088FF',
-                        'Tailwind CSS': '#06B6D4',
-                        'PostgreSQL': '#4169E1',
-                        'MySQL': '#4479A1',
-                        'MariaDB': '#003545',                        
-                        //'AWS': '#FF9900',
-                        //'Next.js': '#000000',
-                        //'GraphQL / REST': '#E10098',
-                        'Git': '#F05032',
-                        'Ansible': '#EE0000',
-                        'Terraform': '#7B42BC',
-                        'GitLab': '#FC6D26',
-                        'Azure Databricks': '#FF3621'
-                    };
+                    const iconColors = getIconColors(isDark);
+                    const iconColor = iconColors[skill.name] || (isDark ? '#c9d1d9' : '#1f2937');
+                    
                     return (
                         <motion.div
                             key={index}
@@ -121,7 +121,7 @@ const SkillsSection: React.FC = () => {
                             whileTap={{ scale: 0.95 }}
                             className="skill-card p-4 bg-gray-100 dark:bg-[#161b22] text-gray-800 dark:text-gray-300 rounded-xl shadow-lg hover:shadow-accent/50 transition-shadow duration-150 flex flex-col items-center gap-3"
                         >
-                            <IconComponent className="text-5xl" style={{ color: iconColors[skill.name] }} />
+                            <IconComponent className="text-5xl" style={{ color: iconColor }} />
                             <span className="text-sm font-medium">{skill.name}</span>
                             
                             {/* Progress Bar */}

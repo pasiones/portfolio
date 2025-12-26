@@ -8,16 +8,40 @@ html {
 /* Base Styles: Light Mode Defaults */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: white; /* Light mode body background */
+    background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 50%, #fef3f2 100%);
+    background-attachment: fixed;
     color: #1f2937; /* Dark text for light mode */
 }
 
+/* Mesh gradient overlay for light mode */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(20, 184, 166, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
 /* Dark Mode Adaptation */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #0d1117; /* Original dark background */
-        color: #c9d1d9; /* Original light text */
-    }
+.dark body {
+    background: linear-gradient(135deg, #0a0e1a 0%, #0d1117 50%, #0f1419 100%);
+    background-attachment: fixed;
+    color: #c9d1d9; /* Original light text */
+}
+
+/* Mesh gradient overlay for dark mode */
+.dark body::before {
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(20, 184, 166, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.10) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(14, 165, 233, 0.08) 0%, transparent 50%);
 }
 
 
@@ -56,8 +80,50 @@ body::-webkit-scrollbar-track {
     background-color: #f3f4f6; /* Light scrollbar track in light mode */
 }
 
-@media (prefers-color-scheme: dark) {
-    body::-webkit-scrollbar-track {
-        background-color: #0d1117; /* Dark scrollbar track in dark mode */
-    }
+.dark body::-webkit-scrollbar-track {
+    background-color: #0d1117; /* Dark scrollbar track in dark mode */
+}
+
+/* Card Mesh Gradient Backgrounds */
+.project-card, .skill-card, .skill-tab {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before, .skill-card::before, .skill-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* Light mode card mesh */
+.project-card::before, .skill-card::before, .skill-tab::before {
+    background: 
+        radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.06) 0%, transparent 50%);
+}
+
+/* Dark mode card mesh */
+.dark .project-card::before, .dark .skill-card::before, .dark .skill-tab::before {
+    background: 
+        radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.10) 0%, transparent 50%);
+}
+
+/* Show mesh on hover */
+.project-card:hover::before, .skill-card:hover::before, .skill-tab:hover::before {
+    opacity: 1;
+}
+
+/* Ensure card content is above mesh */
+.project-card > *, .skill-card > *, .skill-tab > * {
+    position: relative;
+    z-index: 1;
 }

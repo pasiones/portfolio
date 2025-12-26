@@ -10,12 +10,14 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/util/ScrollToTop';
 import CustomCursor from './components/util/CustomCursor';
 import ScrollProgress from './components/util/ScrollProgress';
+import ThemeToggle from './components/util/ThemeToggle';
 
 const App: React.FC = () => {
     return (
         <>
             <ScrollProgress />
             <CustomCursor />
+            <ThemeToggle />
             <NavigationBar />
 
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
