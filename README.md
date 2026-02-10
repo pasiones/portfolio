@@ -127,10 +127,6 @@ This project can be deployed to various platforms:
 
 MIT License - Feel free to use this template for your own portfolio!
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
 ---
 
 Built with ❤️ using React and Vite
