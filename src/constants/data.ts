@@ -155,7 +155,7 @@ export const PROJECTS_DATA: Project[] = [
             'Python', 'XGBoost', 'LangChain', 'FastAPI', 
             'React', 'TypeScript', 'MariaDB', 'Google Cloud'
         ],
-        link: 'https://github.com/vincentbui21/Hackathon2025',
+        link: 'https://github.com/pasiones/Hackathon2025',
         image: ValioAimo
     },
     {
