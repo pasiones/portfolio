@@ -8,6 +8,7 @@ import { SiTypescript, SiDjango, SiTailwindcss, SiPostgresql,
 
 import GcpIcon from '../assets/icons/gcp-icon.svg?react'; 
 import Ecommerce from '../assets/projects/ecommerce.png';
+import ValioAimo from '../assets/projects/valioaimo.png';
 import NPMDep from '../assets/projects/npm-dependency-visualizer.png';
 import SmartTravelCompanion from '../assets/projects/smart-travel-companion.png';
 import WeatherApp from '../assets/projects/weather-app.png';
@@ -155,7 +156,7 @@ export const PROJECTS_DATA: Project[] = [
             'React', 'TypeScript', 'MariaDB', 'Google Cloud'
         ],
         link: 'https://github.com/vincentbui21/Hackathon2025',
-        image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop'
+        image: ValioAimo
     },
     {
         title: 'NPM Dependency Visualization Tool',
