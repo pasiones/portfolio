@@ -6,7 +6,11 @@ import { SiTypescript, SiDjango, SiTailwindcss, SiPostgresql,
     SiNextdotjs, SiGraphql, SiKubernetes, SiFlask, SiFastapi, 
     SiMariadb, SiAnsible, SiTerraform, SiMysql, SiDatabricks } from 'react-icons/si';
 
-import GcpIcon from '../assets/icons/gcp-icon.svg?react';
+import GcpIcon from '../assets/icons/gcp-icon.svg?react'; 
+import Ecommerce from '../assets/projects/ecommerce.png';
+import NPMDep from '../assets/projects/npm-dependency-visualizer.png';
+import SmartTravelCompanion from '../assets/projects/smart-travel-companion.png';
+import WeatherApp from '../assets/projects/weather-app.png';
 
 export const ROLES_DATA: string[] = [
     'Full-Stack Developer',
@@ -136,7 +140,7 @@ export const PROJECTS_DATA: Project[] = [
             'Containerized with Docker for seamless development and production deployment.',
         tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Docker', 'REST API', 'Context API'],
         link: 'https://github.com/pasiones/E-commerce-store',
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop'
+        image: Ecommerce
     },
     {
         title: 'Zero-Fail Logistics Solution',
@@ -162,7 +166,7 @@ export const PROJECTS_DATA: Project[] = [
             'management and understand complex package relationships through interactive visualizations.',
         tags: ['React', 'NPM', 'D3.js', 'JavaScript'],
         link: 'https://npm-dependency-explorer.vercel.app/',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop'
+        image: NPMDep
     },
     {
         title: 'Smart Travel Companion',
@@ -173,7 +177,7 @@ export const PROJECTS_DATA: Project[] = [
             'weather conditions. An interactive map updates based on user category selections.',
         tags: ['FastAPI', 'React', 'TypeScript', 'Oracle Cloud'],
         link: 'http://79.76.39.35/',
-        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop'
+        image: SmartTravelCompanion
     },
     {
         title: 'Real-Time Weather Desktop Application',
@@ -184,7 +188,7 @@ export const PROJECTS_DATA: Project[] = [
             'automate deployment processes.',
         tags: ['Java', 'JavaFX', 'Git', 'CI/CD'],
         link: 'https://github.com/pasiones/Java-Weather-App',
-        image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop'
+        image: WeatherApp
     },
     {
         title: 'AI-Powered Jira Plugin for Bug Reports',

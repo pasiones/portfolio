@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeInDown } from '../constants/animations';
 import { ROLES_DATA } from '../constants/data';
-import profileImage from '../assets/profile.jpg';
+import profileImage from '../assets/pfp/profile.jpg';
 
 const HomeSection: React.FC = () => {
     const [currentRole, setCurrentRole] = useState(0);
