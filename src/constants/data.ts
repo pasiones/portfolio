@@ -127,6 +127,18 @@ export interface Project {
 
 export const PROJECTS_DATA: Project[] = [
     {
+        title: 'Full-Stack E-Commerce Platform',
+        period: 'Personal Project | 2025',
+        description:
+            'Built a complete e-commerce web application with user authentication, product catalog, shopping cart, ' +
+            'checkout flow, order management, and admin dashboard. Implemented React Context API for global state ' +
+            'management (auth & cart), RESTful API with Node.js/Express, and MongoDB for data persistence. ' +
+            'Containerized with Docker for seamless development and production deployment.',
+        tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Docker', 'REST API', 'Context API'],
+        link: 'https://github.com/pasiones/E-commerce-store',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop'
+    },
+    {
         title: 'Zero-Fail Logistics Solution',
         period: 'Hackathon Project | November 2025',
         description: 
