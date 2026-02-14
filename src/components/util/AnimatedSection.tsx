@@ -15,7 +15,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ id, children, classNa
             id={id}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2, margin: "0px 0px -100px 0px" }}
+            viewport={{ once: false, amount: "some", margin: "0px 0px -100px 0px" }}
             variants={fadeInUp}
             className={`${padding} ${className}`}
         >

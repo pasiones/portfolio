@@ -29,7 +29,7 @@ const ProjectsSection: React.FC = () => (
         <motion.div 
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: false, amount: "some" }}
             variants={staggerContainer}
             className="grid md:grid-cols-2 gap-10"
         >

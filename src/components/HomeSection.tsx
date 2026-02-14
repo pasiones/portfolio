@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FaDownload } from 'react-icons/fa';
 import { fadeInDown } from '../constants/animations';
 import { ROLES_DATA } from '../constants/data';
 import profileImage from '../assets/pfp/profile.jpg';
@@ -92,6 +93,16 @@ const HomeSection: React.FC = () => {
                         className="border border-gray-600 dark:border-gray-600 text-gray-800 dark:text-gray-300 font-semibold py-3 px-8 rounded-lg transition duration-300 hover:border-accent hover:text-accent"
                     >
                         Email Me
+                    </motion.a>
+                    <motion.a 
+                        href="/cv.pdf"
+                        download
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex items-center gap-2 border border-gray-600 dark:border-gray-600 text-gray-800 dark:text-gray-300 font-semibold py-3 px-8 rounded-lg text-sm transition duration-300 hover:border-accent hover:text-accent"
+                    >
+                        <FaDownload className="text-sm" />
+                        Download CV
                     </motion.a>
                 </motion.div>
             </div>
