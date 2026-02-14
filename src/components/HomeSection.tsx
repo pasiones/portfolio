@@ -16,7 +16,7 @@ const HomeSection: React.FC = () => {
     }, []);
 
     return (
-        <section id="home" className="py-20 sm:py-28 flex items-center min-h-screen -mt-20">
+        <section id="home" className="pt-24 sm:pt-28 pb-20 sm:pb-28 flex items-center min-h-screen -mt-20">
             <div className="flex flex-col lg:flex-row items-center gap-12 w-full max-w-6xl">
             <div className="flex-1">
                 <motion.p 
