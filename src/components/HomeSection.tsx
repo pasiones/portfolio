@@ -16,7 +16,7 @@ const HomeSection: React.FC = () => {
     }, []);
 
     return (
-        <section id="home" className="py-20 sm:py-28 flex items-center h-screen -mt-20">
+        <section id="home" className="py-20 sm:py-28 flex items-center min-h-screen -mt-20">
             <div className="flex flex-col lg:flex-row items-center gap-12 w-full max-w-6xl">
             <div className="flex-1">
                 <motion.p 
@@ -76,13 +76,13 @@ const HomeSection: React.FC = () => {
                     initial="hidden"
                     animate="visible"
                     variants={fadeInDown}
-                    className="flex space-x-4"
+                    className="flex flex-wrap gap-6 justify-center sm:justify-start"
                 >
                     <motion.a 
                         href="#projects" 
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-accent hover:bg-accent-hover text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300"
+                        className="bg-accent hover:bg-accent-hover text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-lg shadow-lg text-sm sm:text-base transition duration-300"
                     >
                         View My Work
                     </motion.a>
@@ -90,7 +90,7 @@ const HomeSection: React.FC = () => {
                         href="#contact" 
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="border border-gray-600 dark:border-gray-600 text-gray-800 dark:text-gray-300 font-semibold py-3 px-8 rounded-lg transition duration-300 hover:border-accent hover:text-accent"
+                        className="border border-gray-600 dark:border-gray-600 text-gray-800 dark:text-gray-300 font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-sm sm:text-base transition duration-300 hover:border-accent hover:text-accent"
                     >
                         Email Me
                     </motion.a>
@@ -99,7 +99,7 @@ const HomeSection: React.FC = () => {
                         download
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center gap-2 border border-gray-600 dark:border-gray-600 text-gray-800 dark:text-gray-300 font-semibold py-3 px-8 rounded-lg text-sm transition duration-300 hover:border-accent hover:text-accent"
+                        className="flex items-center gap-2 border border-gray-600 dark:border-gray-600 text-gray-800 dark:text-gray-300 font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-sm sm:text-base transition duration-300 hover:border-accent hover:text-accent"
                     >
                         <FaDownload className="text-sm" />
                         Download CV
