@@ -23,6 +23,7 @@ const ScrollToTop: React.FC = () => {
             top: 0,
             behavior: 'smooth'
         });
+        window.history.pushState(null, '', '#home');
     };
 
     return (
