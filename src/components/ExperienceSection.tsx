@@ -4,7 +4,7 @@ import AnimatedSection from './util/AnimatedSection';
 import { EXPERIENCE_DATA } from '../constants/data';
 
 const ExperienceSection: React.FC = () => (
-    <AnimatedSection id="experience" padding="pt-24 sm:pt-32 pb-12 sm:pb-16">
+    <AnimatedSection id="experience" padding="pt-24 sm:pt-32 pb-12 sm:pb-16" className="overflow-hidden">
         <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

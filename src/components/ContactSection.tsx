@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import AnimatedSection from './util/AnimatedSection';
 
 const ContactSection: React.FC = () => (
-    <AnimatedSection id="contact" className="max-w-2xl mx-auto text-center">
+    <AnimatedSection id="contact" className="relative z-10" padding="pt-40 sm:pt-48 pb-28 sm:pb-36">
+        <div className="max-w-2xl mx-auto text-center">
         <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -73,6 +74,7 @@ const ContactSection: React.FC = () => (
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.528-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </motion.a>
         </motion.div>
+        </div>
     </AnimatedSection>
 );
 
