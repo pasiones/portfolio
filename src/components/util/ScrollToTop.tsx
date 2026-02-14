@@ -35,10 +35,10 @@ const ScrollToTop: React.FC = () => {
             }}
             transition={{ duration: 0.3 }}
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 z-50 bg-accent hover:bg-accent-hover text-white p-4 rounded-full shadow-lg hover:shadow-xl transition duration-300"
+            className="fixed bottom-8 right-8 z-50 bg-accent hover:bg-accent-hover text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition duration-300"
             style={{ pointerEvents: isVisible ? 'auto' : 'none' }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.2, transition: { duration: 0.05 } }}
+            whileTap={{ scale: 0.8, transition: { duration: 0.03 } }}
             aria-label="Scroll to top"
         >
             <svg 
