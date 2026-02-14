@@ -14,11 +14,10 @@ import ThemeToggle from './components/util/ThemeToggle';
 
 const App: React.FC = () => {
     useEffect(() => {
-        // Scroll to top on refresh, then handle hash after content loads
+        // Restore scroll position to the correct section on refresh
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }
-        window.scrollTo(0, 0);
 
         const hash = window.location.hash;
         if (hash) {
@@ -28,10 +27,10 @@ const App: React.FC = () => {
                 if (element) {
                     window.scrollTo({
                         top: element.offsetTop,
-                        behavior: 'smooth'
+                        behavior: 'instant'
                     });
                 }
-            }, 300);
+            }, 100);
             return () => clearTimeout(timer);
         }
     }, []);

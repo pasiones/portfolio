@@ -38,10 +38,10 @@ const ExperienceSection: React.FC = () => (
                                     isRight ? 'border-l-4' : 'border-r-4 border-l-0'
                                 } border-accent`}
                             >
-                                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">{job.title}</h3>
-                                <p className="text-accent mb-1">{job.company}</p>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">{job.period}</p>
-                                <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm space-y-2 leading-relaxed">
+                                <h3 className="text-xl lg:text-2xl font-semibold text-gray-900 dark:text-white mb-1">{job.title}</h3>
+                                <p className="text-accent lg:text-lg mb-1">{job.company}</p>
+                                <p className="text-sm lg:text-base text-gray-600 dark:text-gray-400 mb-3">{job.period}</p>
+                                <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm lg:text-base space-y-2 leading-relaxed">
                                     {job.bullets.map((bullet, bulletIndex) => (
                                         <li key={bulletIndex}>{bullet}</li>
                                     ))}
