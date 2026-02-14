@@ -54,7 +54,7 @@ const SkillsSection: React.FC = () => {
         : SKILLS_DATA.filter(skill => skill.category === activeCategory);
 
     return (
-        <AnimatedSection id="skills">
+        <AnimatedSection id="skills" padding="pt-24 sm:pt-32 pb-12 sm:pb-16">
             <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -6,7 +6,7 @@ import { PROJECTS_DATA } from '../constants/data';
 import { staggerContainer, fadeInUp } from '../constants/animations';
 
 const ProjectsSection: React.FC = () => (
-    <AnimatedSection id="projects" className="bg-gray-100 dark:bg-[#161b22] rounded-xl shadow-2xl">
+    <AnimatedSection id="projects" padding="pt-24 sm:pt-32 pb-12 sm:pb-16" className="bg-gray-100 dark:bg-[#161b22] rounded-xl shadow-2xl">
         <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

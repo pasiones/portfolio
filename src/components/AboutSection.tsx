@@ -5,7 +5,7 @@ import { ABOUT_DATA } from '../constants/data';
 
 const AboutSection: React.FC = () => {
     return (
-        <AnimatedSection id="about" padding='py-20 sm:py-22'>
+        <AnimatedSection id="about" padding="pt-24 sm:pt-32 pb-12 sm:pb-16">
             <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
