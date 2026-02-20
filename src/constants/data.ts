@@ -4,7 +4,7 @@ import { FaReact, FaNode, FaDocker, FaPython, FaGithub, FaAws,
 
 import { SiTypescript, SiDjango, SiTailwindcss, SiPostgresql, 
     SiNextdotjs, SiGraphql, SiKubernetes, SiFlask, SiFastapi, 
-    SiMariadb, SiAnsible, SiTerraform, SiMysql, SiDatabricks } from 'react-icons/si';
+    SiMariadb, SiMysql, SiDatabricks } from 'react-icons/si';
 
 import GcpIcon from '../assets/icons/gcp-icon.svg?react'; 
 import Ecommerce from '../assets/projects/ecommerce.png';
@@ -70,10 +70,6 @@ export const ABOUT_DATA: AboutParagraph[] = [
             { text: "Docker", bold: true },
             { text: " and " },
             { text: "Kubernetes", bold: true },
-            { text: ", infrastructure as code through " },
-            { text: "Terraform", bold: true },
-            { text: " and " },
-            { text: "Ansible", bold: true },
             { text: ", and cloud platforms including " },
             { text: "Google Cloud Platform", bold: true },
             { text: " and CSC infrastructure. Currently pursuing " },
@@ -113,8 +109,8 @@ export const SKILLS_DATA: Skill[] = [
     //{ name: 'Next.js', category: 'Frontend', icon: SiNextdotjs, proficiency: 75 },
     //{ name: 'GraphQL / REST', category: 'Backend', icon: SiGraphql, proficiency: 80 },
     { name: 'Git', category: 'Tools', icon: FaGitAlt, proficiency: 95 },
-    { name: 'Ansible', category: 'Tools', icon: SiAnsible, proficiency: 65 },
-    { name: 'Terraform', category: 'Tools', icon: SiTerraform, proficiency: 80 },
+    //{ name: 'Ansible', category: 'Tools', icon: SiAnsible, proficiency: 65 },
+    //{ name: 'Terraform', category: 'Tools', icon: SiTerraform, proficiency: 80 },
     { name: 'GitLab', category: 'Tools', icon: FaGitlab, proficiency: 95 },
     { name: 'Azure Databricks', category: 'Tools', icon: SiDatabricks, proficiency: 85 },
     { name: 'GCP', category: 'Tools', icon: GcpIcon, proficiency: 65 }

@@ -21,8 +21,6 @@ const getIconColors = (isDark: boolean): { [key: string]: string } => ({
     'MySQL': '#4479A1',
     'MariaDB': '#003545',
     'Git': '#F05032',
-    'Ansible': '#EE0000',
-    'Terraform': '#7B42BC',
     'GitLab': '#FC6D26',
     'Azure Databricks': '#FF3621',
 });
