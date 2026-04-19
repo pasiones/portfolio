@@ -12,6 +12,7 @@ import ValioAimo from '../assets/projects/valioaimo.png';
 import NPMDep from '../assets/projects/npm-dependency-visualizer.png';
 import SmartTravelCompanion from '../assets/projects/smart-travel-companion.png';
 import WeatherApp from '../assets/projects/weather-app.png';
+import n8nLabDiscovery from '../assets/projects/n8n-lab-discovery.png';
 
 export const ROLES_DATA: string[] = [
     'Full-Stack Developer',
@@ -127,6 +128,17 @@ export interface Project {
 }
 
 export const PROJECTS_DATA: Project[] = [
+    {
+        title: 'n8n-Based Laboratory Discovery Tool',
+        period: 'Capstone Project | 2026',
+        description: 
+            'Developed an automated laboratory discovery pipeline using n8n, integrating DuckDuckGo and SerpAPI for parallel web searching, ' +
+            'Crawl4AI for robust scraping, and the TUNI GPT-OSS 20B LLM for querying, extraction, and ranking. Created a React-based ' +
+            'web interface for users to execute searches and view dynamically generated reports.',
+        tags: ['n8n', 'React', 'TypeScript', 'LLM', 'Web Scraping', 'Crawl4AI'],
+        link: 'https://github.com/GPT-Laboratory/SloppyAhh_Case-8-n8n-Based-Laboratory-Discovery-Tool',
+        image: n8nLabDiscovery
+    },
     {
         title: 'Full-Stack E-Commerce Platform',
         period: 'Personal Project | 2025',
