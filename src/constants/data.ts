@@ -245,6 +245,20 @@ export interface Experience {
 
 export const EXPERIENCE_DATA: Experience[] = [
     {
+        title: 'Frontend Developer & AI Engineer',
+        company: 'AI-Powered Jira Plugin for Bug Reports Project',
+        period: 'Autumn 2025',
+        bullets: [
+            'Led frontend development (React) for a Jira plugin providing AI-powered assistance for bug ' +
+                'reports in Software Engineering project course.',
+            'Performed prompt engineering for LLM integration, optimizing AI responses for bug report ' +
+                'analysis and recommendations.',
+            'Designed and implemented user interface components for seamless integration with Jira workflow.',
+            'Collaborated with backend team to integrate AI features and ensure smooth data flow.',
+        ],
+        alignment: 'right',
+    },
+    {
         title: 'Master of Science in Web, Software and Cloud',
         company: 'Tampere University',
         period: '2025 - 2027 (Ongoing)',
@@ -259,20 +273,6 @@ export const EXPERIENCE_DATA: Experience[] = [
                 'location-based activities based on real-time weather data.',
             'Developed full-stack applications using FastAPI, React with TypeScript, and deployed on CSC ' +
                 'infrastructure.',
-        ],
-        alignment: 'right',
-    },
-    {
-        title: 'Frontend Developer & AI Engineer',
-        company: 'AI-Powered Jira Plugin for Bug Reports Project',
-        period: 'Autumn 2025',
-        bullets: [
-            'Led frontend development (React) for a Jira plugin providing AI-powered assistance for bug ' +
-                'reports in Software Engineering project course.',
-            'Performed prompt engineering for LLM integration, optimizing AI responses for bug report ' +
-                'analysis and recommendations.',
-            'Designed and implemented user interface components for seamless integration with Jira workflow.',
-            'Collaborated with backend team to integrate AI features and ensure smooth data flow.',
         ],
         alignment: 'left',
     },
