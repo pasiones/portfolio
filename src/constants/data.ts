@@ -136,7 +136,7 @@ export const PROJECTS_DATA: Project[] = [
             'Crawl4AI for robust scraping, and the TUNI GPT-OSS 20B LLM for querying, extraction, and ranking. Created a React-based ' +
             'web interface for users to execute searches and view dynamically generated reports.',
         tags: ['n8n', 'React', 'TypeScript', 'LLM', 'Web Scraping', 'Crawl4AI'],
-        link: 'https://github.com/GPT-Laboratory/SloppyAhh_Case-8-n8n-Based-Laboratory-Discovery-Tool',
+        isPrivate: true,
         image: n8nLabDiscovery
     },
     {
