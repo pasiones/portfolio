@@ -278,24 +278,6 @@ export const EXPERIENCE_DATA: Experience[] = [
     },
     {
         title: 'ML Engineer & Full-Stack Developer',
-        company: 'Junction Hackathon 2025',
-        period: 'November 2025',
-        bullets: [
-            'Developed an end-to-end automated delivery solution for Valio Aimo\'s "Zero-fail logistics" ' +
-                'challenge, achieving 6th place among 15 competitors.',
-            'Built predictive models using pandas, scikit-learn, numpy, and XGBoost to forecast missing ' +
-                'items based on order, stock, and supplier data.',
-            'Designed and implemented an AI-powered customer communication system using LangChain for ' +
-                'proactive shortage notifications and replacement proposals.',
-            'Contributed to UI design and deployment of the full-stack application (FastAPI, MariaDB, ' +
-                'React with TypeScript) on Google Cloud.',
-            'Integrated multimodal claims handling (voice, text, images, video) for post-delivery ' +
-                'remediation and same-day corrective deliveries.',
-        ],
-        alignment: 'right',
-    },
-    {
-        title: 'ML Engineer & Full-Stack Developer',
         company: 'Predictive Electric Metric Extension Project',
         period: 'Spring 2025',
         bullets: [
@@ -310,7 +292,7 @@ export const EXPERIENCE_DATA: Experience[] = [
             'Managed workload distribution and task scheduling using Trello Kanban board for efficient ' +
                 'team collaboration.',
         ],
-        alignment: 'left',
+        alignment: 'right',
     },
     {
         title: 'Bachelor of Science in Electrical and Computer Engineering',
@@ -327,6 +309,6 @@ export const EXPERIENCE_DATA: Experience[] = [
             'Utilized Linux Ubuntu virtual machines extensively throughout programming coursework, ' +
                 'strengthening command-line proficiency.',
         ],
-        alignment: 'right',
+        alignment: 'left',
     }
 ];
