@@ -129,17 +129,6 @@ export interface Project {
 
 export const PROJECTS_DATA: Project[] = [
     {
-        title: 'n8n-Based Laboratory Discovery Tool',
-        period: 'Capstone Project | 2026',
-        description: 
-            'Developed an automated laboratory discovery pipeline using n8n, integrating DuckDuckGo and SerpAPI for parallel web searching, ' +
-            'Crawl4AI for robust scraping, and the TUNI GPT-OSS 20B LLM for querying, extraction, and ranking. Created a React-based ' +
-            'web interface for users to execute searches and view dynamically generated reports.',
-        tags: ['n8n', 'React', 'TypeScript', 'LLM', 'Web Scraping', 'Crawl4AI'],
-        isPrivate: true,
-        image: n8nLabDiscovery
-    },
-    {
         title: 'Full-Stack E-Commerce Platform',
         period: 'Personal Project | 2025',
         description:
@@ -209,6 +198,17 @@ export const PROJECTS_DATA: Project[] = [
         tags: ['React', 'JavaScript', 'Jira API', 'OpenAI API', 'Forge App'],
         isPrivate: true,
         image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop'
+    },
+    {
+        title: 'n8n-Based Laboratory Discovery Tool',
+        period: 'Capstone Project | 2026',
+        description: 
+            'Developed an automated laboratory discovery pipeline using n8n, integrating DuckDuckGo and SerpAPI for parallel web searching, ' +
+            'Crawl4AI for robust scraping, and the TUNI GPT-OSS 20B LLM for querying, extraction, and ranking. Created a React-based ' +
+            'web interface for users to execute searches and view dynamically generated reports.',
+        tags: ['n8n', 'React', 'TypeScript', 'LLM', 'Web Scraping', 'Crawl4AI'],
+        isPrivate: true,
+        image: n8nLabDiscovery
     },
         {
         title: 'Predictive Extension for Electric Metric Data',
