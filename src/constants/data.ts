@@ -200,17 +200,6 @@ export const PROJECTS_DATA: Project[] = [
         image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop'
     },
     {
-        title: 'n8n-Based Laboratory Discovery Tool',
-        period: 'Capstone Project | 2026',
-        description: 
-            'Developed an automated laboratory discovery pipeline using n8n, integrating DuckDuckGo and SerpAPI for parallel web searching, ' +
-            'Crawl4AI for robust scraping, and the TUNI GPT-OSS 20B LLM for querying, extraction, and ranking. Created a React-based ' +
-            'web interface for users to execute searches and view dynamically generated reports.',
-        tags: ['n8n', 'React', 'TypeScript', 'LLM', 'Web Scraping', 'Crawl4AI'],
-        isPrivate: true,
-        image: n8nLabDiscovery
-    },
-        {
         title: 'Predictive Extension for Electric Metric Data',
         period: 'Software Engineering Project | Spring 2025',
         description: 
@@ -221,7 +210,7 @@ export const PROJECTS_DATA: Project[] = [
         isPrivate: true,
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop'
     },
-        {
+    {
         title: 'Kubernetes-Based E-commerce Platform Deployment',
         period: 'Cloud & DevOps Project | Spring 2025',
         description:
@@ -232,6 +221,17 @@ export const PROJECTS_DATA: Project[] = [
         tags: ['Kubernetes', 'Rancher', 'Docker', 'Nginx', 'NFS', 'CSC cPouta'],
         isPrivate: true,
         image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop'
+    },
+    {
+        title: 'n8n-Based Laboratory Discovery Tool',
+        period: 'Capstone Project | 2026',
+        description: 
+            'Developed an automated laboratory discovery pipeline using n8n, integrating DuckDuckGo and SerpAPI for parallel web searching, ' +
+            'Crawl4AI for robust scraping, and the TUNI GPT-OSS 20B LLM for querying, extraction, and ranking. Created a React-based ' +
+            'web interface for users to execute searches and view dynamically generated reports.',
+        tags: ['n8n', 'React', 'TypeScript', 'LLM', 'Web Scraping', 'Crawl4AI'],
+        isPrivate: true,
+        image: n8nLabDiscovery
     }
 ];
 
