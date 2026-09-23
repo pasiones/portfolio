@@ -4,9 +4,9 @@ import { FaReact, FaNode, FaDocker, FaPython, FaGithub, FaAws,
 
 import { SiTypescript, SiDjango, SiTailwindcss, SiPostgresql, 
     SiNextdotjs, SiGraphql, SiKubernetes, SiFlask, SiFastapi, 
-    SiMariadb, SiMysql, SiDatabricks } from 'react-icons/si';
+    SiMariadb, SiMysql, SiDatabricks, SiRabbitmq } from 'react-icons/si';
 
-import GcpIcon from '../assets/icons/gcp-icon.svg?react'; 
+    import GcpIcon from '../assets/icons/gcp-icon.svg?react'; 
 import Ecommerce from '../assets/projects/ecommerce.png';
 import ValioAimo from '../assets/projects/valioaimo.png';
 import NPMDep from '../assets/projects/npm-dependency-visualizer.png';
@@ -96,6 +96,7 @@ export const SKILLS_DATA: Skill[] = [
     { name: 'React.js', category: 'Frontend', icon: FaReact, proficiency: 90 },
     { name: 'Node.js', category: 'Backend', icon: FaNode, proficiency: 90 },
     { name: 'Docker', category: 'Tools', icon: FaDocker, proficiency: 90 },
+    { name: 'RabbitMQ', category: 'Backend', icon: SiRabbitmq, proficiency: 75 },
     { name: 'Kubernetes', category: 'Tools', icon: SiKubernetes, proficiency: 60 },
     { name: 'TypeScript', category: 'Frontend', icon: SiTypescript, proficiency: 85 },
     //{ name: 'Django', category: 'Backend', icon: SiDjango, proficiency: 75 },
@@ -150,10 +151,21 @@ export const PROJECTS_DATA: Project[] = [
             'a full-stack application with multimodal claims handling (voice, text, images, video).',
         tags: [
             'Python', 'XGBoost', 'LangChain', 'FastAPI', 
-            'React', 'TypeScript', 'MariaDB', 'Google Cloud'
+            'React', 'TypeScript', 'MySQL', 'Google Cloud'
         ],
         link: 'https://github.com/pasiones/Hackathon2025',
         image: ValioAimo
+    },
+    {
+        title: 'Real-Time Emote Reaction System',
+        period: 'Advanced Web Development | February2025',
+        description:
+            'Built a distributed real-time reaction platform that simulates live audience engagement using RabbitMQ, WebSockets, ' +
+            'and a React frontend. The system decouples emote generation, analytics, and live updates into independent services, ' +
+            'and uses Docker Compose to orchestrate the full stack with automated message flow and real-time UI updates.',
+        tags: ['React', 'Node.js', 'RabbitMQ', 'AMQP', 'WebSockets', 'Docker', 'Microservices'],
+        link: 'https://github.com/pasiones/Advanced-Webdev-Backend-Project',
+        image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop'
     },
     {
         title: 'NPM Dependency Visualization Tool',

@@ -11,6 +11,7 @@ const getIconColors = (isDark: boolean): { [key: string]: string } => ({
     'React.js': '#61DAFB',
     'Node.js': '#339933',
     'Docker': '#2496ED',
+    'RabbitMQ': '#FF6600',
     'Kubernetes': '#326CE5',
     'TypeScript': '#3178C6',
     'Flask': isDark ? '#FFFFFF' : '#000000',
